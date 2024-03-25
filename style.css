@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    border: 0;
+    background: linear-gradient(315deg, #8f3636, #d7e1ec);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container div {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform: translateY(-10px);
+}
+
+.container div:hover {
+    transform: translateY(-5px);
+}
+
+.container #facebook:hover {
+    background-color: rgb(33, 43, 154);
+}
+
+.container #twitter:hover {
+    background-color: rgb(25, 143, 158);
+}
+
+.container #instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+
+.container #linkedin:hover {
+    background-color: rgba(8, 31, 182, 0.722);
+}
+
+.container #youtube:hover {
+    background-color: red;
+}
+
+div a li {
+    font-size: 50px;
+    color: black;
+    transition: color 1s;
+}
+
+div a li:hover {
+    color: white;
+}
+
+.container .nombre {
+    position: absolute;
+    top: 0;
+    font-size: 15px;
+    background-color: #fff;
+    color: #ffffff;
+    padding: 5px 8px;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 10px;
+    width: 60px;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.container div:hover .nombre {
+    top: -82px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.01);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 47, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    color: #fff;
+}
